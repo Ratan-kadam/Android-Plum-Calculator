@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:id="@+id/label0"
+        android:textAlignment="gravity"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/display2"
+            android:layout_weight=".3"
+            android:textIsSelectable="false"
+            android:textColor="#fff4f2f2"
+            android:textSize="@dimen/abc_action_bar_stacked_max_height"
+            android:background="@drawable/frame2"
+            android:visibility="visible"
+            android:padding="15dp"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:id="@+id/baseLayout"
+        android:background="@drawable/bk6">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".20">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton1"
+                android:clickable="true"
+                android:layout_weight=".25"
+                android:focusableInTouchMode="false"
+                style="@style/Base.TextAppearance.AppCompat.Display2"
+                android:background="@drawable/button_onclick" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton2"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick2" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton3"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:clickable="false">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton4"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick4" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton5"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick5" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton6"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".20">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton7"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick7" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton8"
+                android:layout_weight=".25"
+                android:background="@drawable/button_onclick8" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButton9"
+                android:layout_weight=".25"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/button_onclick9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".20">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButtonMinus"
+                android:layout_weight=".3"
+                android:background="@drawable/minusbutton_onclick" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButtonZero"
+                android:clickable="false"
+                android:baselineAlignBottom="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/button_onclick0"
+                android:layout_weight=".3" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButtonAdd"
+                android:layout_weight=".3"
+                android:background="@drawable/equalsbutton_onclick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".20">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButtonPlus"
+                android:layout_weight=".25"
+                android:clickable="false"
+                android:background="@drawable/plusbutton_onclick" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iButtonClear"
+                android:layout_weight=".5"
+                android:background="@drawable/clearbutton_onclick" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
